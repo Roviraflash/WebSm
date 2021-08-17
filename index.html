@@ -1,13 +1,325 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SM SO S.L</title>
+
+    <!--Font Awesome. Repositorio web de funtes(https://cdnjs.com/libraries/font-awesome)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <!--FONT OSWALS. Imp. de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="styles.css "/>
+
+    <!--SCROLL REVEAL es un CDN de JS extret de: ( https://scrollrevealjs.org/guide/hello-world.html )-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
+
 <body>
-    <h1>ole no eu antencgggg</h1>
+
+    <div class="menu-btn"> <!--ESTE ES EL BOTON QUE APARECE EN EL MEDIAQUERY DE 700PX-->
+        <i class="fas fa-bars"></i>
+    </div>
+
+
+    <div class="container"> <!--CONTAINER GENERAL. Ayudar a centrar el contenido.-->
+        <!--INICIO BARRA DE NAVEGACIÓN -->
+        <nav class="nav-main"> 
+
+            <img src="img/logosm.jpg" alt="SM SO S.L" class="nav-brand"/> <!--LOGO-->
+
+            <ul class="nav-menu"> <!--LINKS-->
+                <li>
+                    <a href="#">Alquiler</a>
+                </li>
+                <li>
+                    <a href="#">Venta</a>
+                </li>
+                <li>
+                    <a href="#">Asistencia Técnica</a>
+                </li>
+                <li>
+                    <a href="#">Producción</a>
+                </li>
+            </ul>
+
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i> <!--Icono-->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--FIN BARRA DE NAVEGACIÓN -->
+
+        <hr> <!--Barra de separación-->
+
+        <!--INICIO SHOWCASE / IMAGEN PRINCIPAL DEL SITIO-->
+
+        <header class="showcase">
+
+            <h2>Profesionales del espectáculo</h2>
+
+            <p>Mas de 30 años en el sector del espectáculo nos avalan. Somos capaces de hacer tu evento realidad.</p>
+
+            <a href="#" class="btn">Leer más <i class="fas fa-angle-double-right"></i></a>
+
+        </header>
+
+        <!--FINAL SHOWCASE-->
+
+        <!--INICIO TARJETAS 1 -->
+
+        <div class="cards1">
+            
+            <div>
+                <div id="imatge1"></div>
+                <h3>Iluminacíon</h3>
+                <p>Damos luz a tu proyecto. Teatro, danza, conciertos, eventos corporativos...</p>
+                <a class="btn-card" href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+            <div>
+                <div id="imatge2"></div>
+                <h3>Sonido</h3>
+                <p>Disponemos de toda la tecnología mas avanzada para hacer sonar tus ideas.</p>
+                <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+            <div>
+                <div id="imatge3"></div>
+                <h3>Video</h3>
+                <p>Proyectores, pantallas, sistemas de realización en directo. Danos tu contenido, y nosotros lo mostramos.</p>
+                <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+            <div>
+                <div id="imatge4"></div>
+                <h3>Eventos</h3>
+                <p>Deja tu evento en nuestras manos. Nos ocupamos de toda la logística para garantizar tu éxito.</p>
+                <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+
+        <!--FINAL TARJETAS 1 -->
+
+
+
+        <!--INICIO BANNER 1-->
+        <section class="banner1">
+            <div class="content">
+                <h2>Galeria de trabajos realizados.</h2>
+                <p>Una imagen vale más que mil palabras</p>
+                <a href="#" class="btn">Galeria <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </section>
+        <!--FINAL BANNER 1-->
+
+        <!--INICIO TARJETAS 2 -->
+
+        <div class="cards2">
+            
+            <div>
+                <div id="imatge5"></div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta libero earum odit fugit ducimus dolore inventore vitae! Inventore, fugit labore?</p>
+                <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+            <div>
+                <div id="imatge6"></div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta libero earum odit fugit ducimus dolore inventore vitae! Inventore, fugit labore?</p>
+                <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+            <div>
+                <div id="imatge7"></div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta libero earum odit fugit ducimus dolore inventore vitae! Inventore, fugit labore?</p>
+                <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+            <div>
+                <div id="imatge8"></div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta libero earum odit fugit ducimus dolore inventore vitae! Inventore, fugit labore?</p>
+                <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+
+        <!--FINAL TARJETAS 2 -->
+
+         <!--INICIO BANNER 2-->
+
+         <section class="banner2">
+            <div class="content">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae rerum molestias pariatur sequi sit inventore omnis, fugit velit laudantium perferendis?</p>
+                <a href="#" class="btn">Leer más <i class="fas fa-angle-double-right"></i></a>
+
+            </div>
+        </section>
+        <!--FINAL BANNER 2-->   
+
+        <!--INICIO SECCION SOCIAL-->
+        
+        <section class="social">
+            <p>Siguenos en:</p>
+            <div class="links">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+        <!--FINAL SECCION SOCIAL-->
+
+    </div>
+
+    <!--INICIO SECCION FOOTER-->  
+
+    <div class="footer-link"> <!--Se crea un "div" fuera del container principal para que pueda ocupar todo el ancho de la pagina-->
+        
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Title One</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Title One</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Title One</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Title One</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h3> SM.SO.SL Copyright</h3>
+    </footer>
+
+    <!--CUSTOM JS-->
+    <script src="main.js"></script>
+
+    
+
     
 </body>
 </html>
+
+<!--seguir video en 1:10:59-->
+
+
