@@ -1,0 +1,481 @@
+* { /*Reset a todo el documento*/
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container { /*Centramos todo la pagina*/
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    color: white;
+    /*Fondo importado de "PatternsHero.com*/
+    background-color: #ccc;
+    /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%237a0202' fill-opacity='0.32'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");*/
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif; /*Imp- googlef*/
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul { 
+    list-style: none;
+}
+
+/*BARRA NAVEGACION*/
+
+.nav-main{
+    font-size: 20px;
+    display: flex; /*Activa el Flexbox*/
+    justify-content: space-between; /*Ocupa todo el ancho disponible*/
+    align-items: center;
+    height: 60px;
+    padding: 20px 0px; 
+}
+
+.nav-brand {  /*icono*/
+
+    width: 60px;
+}
+
+.nav-main ul {  /*Enlaces de navegación*/
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-main ul li a {
+    padding: 2px;
+}
+
+.nav-main ul li a:hover {
+    color: #2f3640;
+    transition: all 1s;
+    
+}
+
+.nav-main ul.nav-menu {
+    flex:1;
+    margin-left: 20px;
+}
+
+
+hr {
+
+    margin-bottom: 10px;
+}
+
+.menu-btn {             /*Icono creado para el mediaquery 700px*/
+    position: absolute;
+    cursor: pointer;
+    top: 12px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none; /*En el tamaño inicial esta oculto*/
+}
+/*SHOWCASE / IMAGEN PRINCIPAL*/
+
+.showcase {
+    display: block;
+    width: 100%;
+    height: 550px;
+    background: url(img/concierto.jpg) no-repeat center/cover; /*no-repeat=no repetir la imatge  center/cover=centrar i ocupar tot*/
+    padding-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /*pa que tot se coloque baix*/
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px  black;
+    border-radius: 20px;
+}
+
+.showcase h2 {
+    transition: all 400ms linear;
+} 
+.showcase:hover h2 {
+    transition: all 500ms linear;
+    transform:translateY(-260px);
+    font-size: 50px;
+}
+
+.showcase p {
+    transition: all 400ms linear;
+} 
+.showcase:hover p {
+    transition: all 500ms linear;
+    transform:translateY(-40px);
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.btn { /*Botón*/
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: 10px 20px;
+    background: #262626;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 0px;
+
+}
+
+.btn:hover {
+    opacity: 0.7;
+    transition: all 300ms;
+}
+
+.showcase p,
+.showcase a {
+    padding: 10px;
+}
+
+/*TARJETAS 1*/
+
+.cards1 {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr) ;
+    gap: 25px;
+    margin: 10px 0;
+    color: #2f3640;
+}
+
+.cards1 #imatge1:hover,
+.cards1 #imatge2:hover,
+.cards1 #imatge3:hover,
+.cards1 #imatge4:hover{
+    box-shadow: 10px 10px 10px  black;
+}
+
+.cards1 h3 {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 0px 15px 0px;
+    text-shadow: 0px 0px 1px grey;
+    
+}
+
+.cards1 #imatge1 {
+    background: url(img/iluminacion.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 180px;
+    box-shadow: 5px 5px 5px  black;
+    border-radius: 15px;
+   
+} 
+
+.cards1 #imatge2 {
+    background: url(img/sonido.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 180px;
+    box-shadow: 5px 5px 5px  black;
+    border-radius: 15px;
+} 
+
+.cards1 #imatge3 {
+    background: url(img/video.jpeg) no-repeat center center/cover;
+    width: 100%;
+    height: 180px;
+    box-shadow: 5px 5px 5px  black;
+    border-radius: 15px;
+} 
+
+.cards1 #imatge4 {
+    background: url(img/evento.jpeg) no-repeat center center/cover;
+    width: 100%;
+    height: 180px;
+    box-shadow: 5px 5px 5px  black;
+    border-radius: 15px;
+} 
+
+
+
+
+/*BANNER 1*/
+.banner1 {
+
+    width: 100%;
+    height: 400px;
+    background: url(img/galeria.png) no-repeat center center/cover;
+    box-shadow: 5px 5px 5px  black;
+    border-radius: 20px;
+} 
+
+.banner1 .content {
+
+    width: 40%;
+    padding: 10px 0 0 30px;
+    text-align: center;
+    margin: 0px auto;
+
+}
+
+.banner1 .content h2{
+    padding:10px 0 20px 0;
+    font-size: 35px;
+    
+    
+}
+.banner1 .content p {
+
+    padding: 10px 0 20px 0;
+    font-size: 25px;
+}
+
+
+/*TARJETAS 2*/
+
+.cards2 {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr) ;
+    gap: 25px;
+    margin: 30px 0;
+    color: #2f3640;
+    }
+
+    .cards2 #imatge5:hover,
+    .cards2 #imatge6:hover,
+    .cards2 #imatge7:hover,
+    .cards2 #imatge8:hover{
+        box-shadow: 10px 10px 10px  black;
+    }
+
+.cards2 h3 {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 0px 15px 0px;
+    text-shadow: 0px 0px 1px grey;
+    
+}
+
+
+.cards2 #imatge5 {
+    background: url(img/iluminacion.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 180px;
+    box-shadow: 5px 5px 5px  black;
+    border-radius: 15px;
+   
+} 
+
+.cards2 #imatge6 {
+    background: url(img/sonido.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 180px;
+    box-shadow: 5px 5px 5px  black;
+    border-radius: 15px;
+} 
+
+.cards2 #imatge7 {
+    background: url(img/video.jpeg) no-repeat center center/cover;
+    width: 100%;
+    height: 180px;
+    box-shadow: 5px 5px 5px  black;
+    border-radius: 15px;
+} 
+
+.cards2 #imatge8 {
+    background: url(img/evento.jpeg) no-repeat center center/cover;
+    width: 100%;
+    height: 180px;
+    box-shadow: 5px 5px 5px  black;
+    border-radius: 15px;
+}
+
+/*BANNER 2*/
+
+.banner2 {
+    width: 100%;
+    height: 350px;
+    background: url(img/image-five.jpg) no-repeat center center/cover ;
+    box-shadow: 5px 5px 5px  black;
+    border-radius: 20px;
+}
+
+.banner2 .content {
+
+    width: 60%;
+    padding: 100px 0 0 30px;
+}
+
+
+
+/*APARTADO SOCIAL*/
+
+.social{         /*Texto del apartado*/
+    margin: 50px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links {        /*Iconos*/ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+/*SECCION DEL FOOTER LINKS*/
+
+.footer-link {                    /*Estilo del contenedor general*/
+    background-color: #2f3640;
+    color: #616161;
+    font-size: 15px;
+    padding: 35px 0;
+}
+
+.footer-container {              /*Estilos para poder repartir las columnas usando GRID*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul {          /*Aqui centramos todo el grid*/
+    margin: 0 auto;
+}
+
+.footer-container ul li {          /*Aqui damos espacio entre lineas. Podria usarser margin: 15px 0;   */
+    line-height: 2.8;
+}
+
+/*SECCION FOOTER*/
+
+.footer {
+    background-color: #2f3640;
+    color: gray;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*SECCION DE LOS MEDIAQUERYS*/
+
+
+
+@media (max-width: 700px){
+
+        .menu-btn {
+            display: block;
+            }
+
+        .nav-main ul.nav-menu {  /*Aqui vamos a convertir la barrar de navegacion en un menu emergente*/
+            display: block;
+            position:absolute;
+            top: 0;
+            left: 0;
+            background: #2f3640;
+            height: 100%;
+            padding: 30px;
+            opacity: .8;
+            transform: translateX(-400px); /*Este valor hace que este oculto el menu, hasta que lo llamemos desde JavaScrip*/
+            transition: transform 0.5s ease-in-out;
+            }
+
+        .nav-main ul.nav-menu li a:hover{
+            color: white;
+            border-bottom: 2px solid white;
+            transition: 100ms;
+        }
+
+
+       .nav-main ul.nav-menu.show {
+           transform: translateX(-20px);
+            }
+
+       .nav-main ul.nav-menu li {
+        padding: 20px;
+        font-size: 20px;
+        }
+
+        .nav-main ul.nav-menu-right { /*Movemos el icono de la lupa, para que el icono del menu desplegable*/
+            margin-right: 40px;       /*quede en el sitio que queremos*/
+        }
+
+        .showcase:hover h2 {
+            transition: all 500ms linear;
+            transform:none;
+            font-size: 24px;
+        }
+
+        .showcase p {
+            text-align: center;
+        }
+        .showcase:hover p {
+            transform:none;
+            font-size: 16px;
+            }
+
+      
+
+
+        .cards1,.cards2{
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .showcase {
+            padding: 50px;
+        }
+
+        .banner1 .content,
+        .banner2 .content {
+            width: 80%;
+        }
+
+        .footer-link .footer-container {
+            grid-template-columns: repeat(2,1fr);
+        }
+}
+
+
+@media (max-width: 500px){
+
+    .menu-btn {
+        display: block;
+    }
+
+    .cards1,.cards2 {
+        grid-template-columns: 1fr;
+    }
+
+    .banner1 .content,
+    .banner2 .content {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .footer-link .footer-container{
+        grid-template-columns: 1fr;
+        font-size: 25px;
+    }
+}
+    
+
+
+
+
